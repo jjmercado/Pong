@@ -52,7 +52,7 @@ void Game::ProcessEvents(sf::RenderWindow& window)
 		{
 			window.close();
 		}
-
+		puck.Event(event);
 		paddle1.Event(event, sf::Keyboard::W, sf::Keyboard::S);
 		paddle2.Event(event, sf::Keyboard::Up, sf::Keyboard::Down);
 	}
@@ -62,7 +62,7 @@ void Game::Update(sf::Time deltaTime)
 {
 	paddle1.Update(deltaTime);
 	paddle2.Update(deltaTime);
-	//puck.Update(deltaTime);
+	puck.Update(deltaTime);
 }
 
 void Game::Render(sf::RenderWindow& window)
