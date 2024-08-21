@@ -9,7 +9,7 @@ Paddle::Paddle(sf::IntRect selectPaddle, sf::Vector2f setPosition)
 		paddleSprite.setPosition(setPosition);
 	}
 
-	speed = 100;
+	speed = 400;
 }
 
 Paddle::~Paddle()
@@ -46,6 +46,7 @@ void Paddle::Render(sf::RenderWindow& window)
 void Paddle::Update(sf::Time deltaTime)
 {
 	paddleSprite.move(direction * speed * deltaTime.asSeconds());
+	IsCollidingWithWall();
 }
 
 sf::Vector2f Paddle::GetPosition()
@@ -61,4 +62,19 @@ void Paddle::SetPosition(sf::Vector2f setPosition)
 float Paddle::GetSpeed()
 {
 	return speed;
+}
+
+bool Paddle::IsCollidingWithWall()
+{
+	if (paddleSprite.getPosition().y - paddleSprite.getGlobalBounds().height / 2 < 0)
+	{
+		paddleSprite.setPosition(paddleSprite.getPosition().x, paddleSprite.getGlobalBounds().height / 2);
+		return true;
+	}
+	else if (paddleSprite.getPosition().y + paddleSprite.getGlobalBounds().height / 2 > 600)
+	{
+		paddleSprite.setPosition(paddleSprite.getPosition().x, 600 - paddleSprite.getGlobalBounds().height / 2);
+		return true;
+	}
+	return false;
 }

@@ -19,5 +19,6 @@ class Paddle
 		sf::Sprite paddleSprite;
 		float speed;
 		sf::Vector2f direction;
+		bool IsCollidingWithWall();
 };
 
