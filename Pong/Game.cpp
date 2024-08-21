@@ -1,6 +1,6 @@
 #include "Game.hpp"
 
-Game::Game() : puck()
+Game::Game() : puck(), paddle1(sf::IntRect(0, 0, 50, 150), sf::Vector2f(50, 300)), paddle2(sf::IntRect(50, 0, 50, 150), sf::Vector2f(950, 300)), frameCount(0)
 {
 	if(backgroundTexture.loadFromFile("..\\bg.jpg"));
 	{
@@ -64,5 +64,7 @@ void Game::Render(sf::RenderWindow& window)
 	window.clear();
 	window.draw(backgroundSprite);
 	puck.Render(window);
+	paddle1.Render(window);
+	paddle2.Render(window);
 	window.display();
 }

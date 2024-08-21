@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 #include "Puck.hpp"
+#include "Paddle.hpp"
 
 class Game
 {
@@ -19,5 +20,7 @@ class Game
 		sf::Clock fpsClock;
 		unsigned int frameCount;
 		Puck puck;
+		Paddle paddle1;
+		Paddle paddle2;
 };
 
