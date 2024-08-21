@@ -14,8 +14,8 @@ Puck::Puck()
 	std::uniform_real_distribution<> dis(-pi / 4, pi / 4);
 
 	angle = dis(gen);
-	speedX = 2 * cos(angle);
-	speedY = 2 * sin(angle);
+	speedX = 5 * cos(angle);
+	speedY = 5 * sin(angle);
 
 	if (dis(gen) < 0.5)
 	{
@@ -53,7 +53,7 @@ void Puck::IsCollidingWithWall()
 {
 	if (puckSprite.getPosition().y - puckSprite.getGlobalBounds().height / 2 <= 0 || puckSprite.getPosition().y + puckSprite.getGlobalBounds().height / 2 >= 600)
 	{
-		angle = -angle;
+		speedY = -speedY;
 	}
 }
 
@@ -63,8 +63,8 @@ void Puck::Reset()
 	std::mt19937 gen(rd());
 	std::uniform_real_distribution<> dis(-pi/4, pi/4);
 	angle = dis(gen);
-	speedX = 2 * cos(angle);
-	speedY = 2 * sin(angle);
+	speedX = 5 * cos(angle);
+	speedY = 5 * sin(angle);
 	puckSprite.setPosition(500, 300);
 
 	if (dis(gen) < 0.5)
