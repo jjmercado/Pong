@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "Puck.hpp"
 
 class Game
 {
@@ -17,5 +18,6 @@ class Game
 		sf::Sprite backgroundSprite;
 		sf::Clock fpsClock;
 		unsigned int frameCount;
+		Puck puck;
 };
 

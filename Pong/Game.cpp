@@ -1,6 +1,6 @@
 #include "Game.hpp"
 
-Game::Game()
+Game::Game() : puck()
 {
 	if(backgroundTexture.loadFromFile("..\\bg.jpg"));
 	{
@@ -63,5 +63,6 @@ void Game::Render(sf::RenderWindow& window)
 {
 	window.clear();
 	window.draw(backgroundSprite);
+	puck.Render(window);
 	window.display();
 }
