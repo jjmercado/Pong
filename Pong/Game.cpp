@@ -65,6 +65,7 @@ void Game::Update(sf::Time deltaTime)
 	paddle1.IsCollidingWithPuck(puck, -pi / 4, pi / 4);
 	paddle2.IsCollidingWithPuck(puck, (pi * 5) / 4, (pi * 3) / 4);
 	puck.Update(deltaTime);
+	score.Update(puck);
 }
 
 void Game::Render(sf::RenderWindow& window)
@@ -74,5 +75,6 @@ void Game::Render(sf::RenderWindow& window)
 	puck.Render(window);
 	paddle1.Render(window);
 	paddle2.Render(window);
+	score.Render(window);
 	window.display();
 }

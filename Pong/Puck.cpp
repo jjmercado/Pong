@@ -82,7 +82,11 @@ void Puck::IsCollidingWithWall()
 
 bool Puck::IsOutOfBounds()
 {
-	if (puckSprite.getPosition().x - puckSprite.getGlobalBounds().width / 2 <= 0 || puckSprite.getPosition().x + puckSprite.getGlobalBounds().width / 2 >= 1000)
+	if (puckSprite.getPosition().x - puckSprite.getGlobalBounds().width / 2 <= 0)
+	{
+		return true;
+	}
+	else if (puckSprite.getPosition().x + puckSprite.getGlobalBounds().width / 2 >= 1000)
 	{
 		return true;
 	}

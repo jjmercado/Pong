@@ -31,7 +31,6 @@ class Puck
 		void IsCollidingWithWall();
 		bool IsOutOfBounds();
 		void Reset();
-		float RandomAngle();
 		float pi = 3.14159274;
 };
 

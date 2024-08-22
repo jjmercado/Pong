@@ -134,11 +134,15 @@
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Paddle.cpp" />
     <ClCompile Include="Puck.cpp" />
+    <ClCompile Include="Score.cpp" />
+    <ClCompile Include="ScorePoint.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.hpp" />
     <ClInclude Include="Paddle.hpp" />
     <ClInclude Include="Puck.hpp" />
+    <ClInclude Include="Score.hpp" />
+    <ClInclude Include="ScorePoint.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

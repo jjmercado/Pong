@@ -3,6 +3,7 @@
 #include <iostream>
 #include "Puck.hpp"
 #include "Paddle.hpp"
+#include "Score.hpp"
 
 class Game
 {
@@ -20,6 +21,7 @@ class Game
 		sf::Clock fpsClock;
 		unsigned int frameCount;
 		Puck puck;
+		Score score;
 		Paddle paddle1;
 		Paddle paddle2;
 		float pi = 3.14159274;
