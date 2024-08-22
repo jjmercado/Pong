@@ -62,6 +62,8 @@ void Game::Update(sf::Time deltaTime)
 {
 	paddle1.Update(deltaTime);
 	paddle2.Update(deltaTime);
+	paddle1.IsCollidingWithPuck(puck, -pi / 4, pi / 4);
+	paddle2.IsCollidingWithPuck(puck, (pi * 5) / 4, (pi * 3) / 4);
 	puck.Update(deltaTime);
 }
 

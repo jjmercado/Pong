@@ -13,6 +13,11 @@ class Puck
 		void Event(sf::Event event);
 		void Render(sf::RenderWindow& window);
 		void Update(sf::Time deltaTime);
+		sf::Sprite GetSprite();
+		float GetSpeedX();
+		float GetSpeedY();
+		void SetSpeedX(float setSpeedX);
+		void SetSpeedY(float setSpeedY);
 
 
 	private:

@@ -22,5 +22,6 @@ class Game
 		Puck puck;
 		Paddle paddle1;
 		Paddle paddle2;
+		float pi = 3.14159274;
 };
 

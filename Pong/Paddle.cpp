@@ -78,3 +78,28 @@ bool Paddle::IsCollidingWithWall()
 	}
 	return false;
 }
+
+void Paddle::IsCollidingWithPuck(Puck& puck, float fromAngle, float toAngle)
+{
+	if (paddleSprite.getGlobalBounds().intersects(puck.GetSprite().getGlobalBounds()))
+	{
+		float diff = puck.GetSprite().getPosition().y - (paddleSprite.getPosition().y - paddleSprite.getGlobalBounds().height / 2);
+		float angle = Map(diff, 0, paddleSprite.getGlobalBounds().height, fromAngle, toAngle);
+		puck.SetSpeedX(5.0f * (float)cos(angle));
+		puck.SetSpeedY(5.0f * (float)sin(angle));
+	}
+}
+
+float Paddle::Map(float s, float a1, float a2, float b1, float b2)
+{
+	return b1 + (s - a1) * (b2 - b1) / (a2 - a1);
+}
+
+//if (puck.PosOnScreen.Y > RightPaddle.PaddlePos.Y - RightPaddle.SizeOnTexture.Y / 2 && puck.PosOnScreen.Y < RightPaddle.PaddlePos.Y + RightPaddle.SizeOnTexture.Y / 2 && puck.PosOnScreen.X + puck.PosOnTexture.Width / 2 > RightPaddle.PaddlePos.X && puck.PosOnScreen.X + puck.PosOnTexture.Width / 2 > RightPaddle.PaddlePos.X)
+//{
+//	float diff = puck.PosOnScreen.Y - (RightPaddle.PaddlePos.Y - RightPaddle.SizeOnTexture.Y / 2);
+//	float angle = Map(diff, 0, RightPaddle.SizeOnTexture.Y, MathHelper.ToRadians(225), MathHelper.ToRadians(135));
+//	puck.PuckSpeedX = 5.0f * (float)Math.Cos(angle);
+//	puck.PuckSpeedY = 5.0f * (float)Math.Sin(angle);
+//	Objects.SoundEffects[2].Play();
+//}

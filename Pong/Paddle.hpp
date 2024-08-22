@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "Puck.hpp"
 
 class Paddle
 {
@@ -13,6 +14,7 @@ class Paddle
 		sf::Vector2f GetPosition();
 		void SetPosition(sf::Vector2f setPosition);
 		float GetSpeed();
+		void IsCollidingWithPuck(Puck& puck, float fromAngle, float toAngle);
 
 	private:
 		sf::Texture paddleTexture;
@@ -20,5 +22,8 @@ class Paddle
 		float speed;
 		sf::Vector2f direction;
 		bool IsCollidingWithWall();
+		float Map(float s, float a1, float a2, float b1, float b2);
 };
+
+
 

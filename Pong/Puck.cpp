@@ -49,6 +49,31 @@ void Puck::Update(sf::Time deltaTime)
 	puckSprite.move(speedX, speedY);
 }
 
+sf::Sprite Puck::GetSprite()
+{
+	return puckSprite;
+}
+
+float Puck::GetSpeedX()
+{
+	return speedX;
+}
+
+float Puck::GetSpeedY()
+{
+	return speedY;
+}
+
+void Puck::SetSpeedX(float setSpeedX)
+{
+	speedX = setSpeedX;
+}
+
+void Puck::SetSpeedY(float setSpeedY)
+{
+	speedY = setSpeedY;
+}
+
 void Puck::IsCollidingWithWall()
 {
 	if (puckSprite.getPosition().y - puckSprite.getGlobalBounds().height / 2 <= 0 || puckSprite.getPosition().y + puckSprite.getGlobalBounds().height / 2 >= 600)
