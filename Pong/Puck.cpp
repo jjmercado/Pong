@@ -29,13 +29,6 @@ Puck::~Puck()
 
 void Puck::Event(sf::Event event)
 {
-	if (event.type == sf::Event::KeyPressed)
-	{
-		if (event.key.code == sf::Keyboard::Space)
-		{
-			Reset();
-		}
-	}
 }
 
 void Puck::Render(sf::RenderWindow& window)
@@ -45,6 +38,11 @@ void Puck::Render(sf::RenderWindow& window)
 
 void Puck::Update(sf::Time deltaTime)
 {
+	if (IsOutOfBounds())
+	{
+		Reset();
+	}
+
 	IsCollidingWithWall();
 	puckSprite.move(speedX, speedY);
 }
@@ -82,32 +80,28 @@ void Puck::IsCollidingWithWall()
 	}
 }
 
+bool Puck::IsOutOfBounds()
+{
+	if (puckSprite.getPosition().x - puckSprite.getGlobalBounds().width / 2 <= 0 || puckSprite.getPosition().x + puckSprite.getGlobalBounds().width / 2 >= 1000)
+	{
+		return true;
+	}
+	return false;
+}
+
 void Puck::Reset()
 {
 	std::random_device rd;
 	std::mt19937 gen(rd());
 	std::uniform_real_distribution<> dis(-pi/4, pi/4);
+	std::uniform_real_distribution<> dis1(0, 1);
 	angle = dis(gen);
 	speedX = 5 * cos(angle);
 	speedY = 5 * sin(angle);
 	puckSprite.setPosition(500, 300);
 
-	if (dis(gen) < 0.5)
+	if (dis1(gen) < 0.5)
 	{
 		speedX *= -1;
 	}
 }
-
-//float Puck::RandomAngle()
-//{
-//	std::random_device rd;
-//	std::mt19937 gen(rd());
-//	std::uniform_real_distribution<> dis(-pi/4, pi/4);
-//
-//	if (dis(gen) < 0.5)
-//	{
-//		-angle;
-//	}
-//
-//	return dis(gen);
-//}

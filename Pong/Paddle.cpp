@@ -94,12 +94,3 @@ float Paddle::Map(float s, float a1, float a2, float b1, float b2)
 {
 	return b1 + (s - a1) * (b2 - b1) / (a2 - a1);
 }
-
-//if (puck.PosOnScreen.Y > RightPaddle.PaddlePos.Y - RightPaddle.SizeOnTexture.Y / 2 && puck.PosOnScreen.Y < RightPaddle.PaddlePos.Y + RightPaddle.SizeOnTexture.Y / 2 && puck.PosOnScreen.X + puck.PosOnTexture.Width / 2 > RightPaddle.PaddlePos.X && puck.PosOnScreen.X + puck.PosOnTexture.Width / 2 > RightPaddle.PaddlePos.X)
-//{
-//	float diff = puck.PosOnScreen.Y - (RightPaddle.PaddlePos.Y - RightPaddle.SizeOnTexture.Y / 2);
-//	float angle = Map(diff, 0, RightPaddle.SizeOnTexture.Y, MathHelper.ToRadians(225), MathHelper.ToRadians(135));
-//	puck.PuckSpeedX = 5.0f * (float)Math.Cos(angle);
-//	puck.PuckSpeedY = 5.0f * (float)Math.Sin(angle);
-//	Objects.SoundEffects[2].Play();
-//}
