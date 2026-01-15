@@ -28,7 +28,7 @@ Voraussetzungen
 
 - CMake (Version 3.10 oder höher).
 
-- SFML 2.6.1 (muss auf deinem System installiert sein).
+- SFML 2.6.2 (muss auf deinem System installiert sein).
 
 Schritt-für-Schritt
 
