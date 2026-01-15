@@ -2,7 +2,7 @@
 
 Game::Game() : puck(), paddle1(sf::IntRect(0, 0, 50, 150), sf::Vector2f(50, 300)), paddle2(sf::IntRect(50, 0, 50, 150), sf::Vector2f(950, 300)), frameCount(0)
 {
-	if(backgroundTexture.loadFromFile("..\\bg.jpg"));
+	if(backgroundTexture.loadFromFile("./assets/bg.jpg"));
 	{
 		backgroundSprite.setTexture(backgroundTexture);
 		backgroundSprite.setOrigin(backgroundSprite.getGlobalBounds().width / 2, backgroundSprite.getGlobalBounds().height / 2);
