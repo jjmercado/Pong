@@ -71,4 +71,4 @@ After the build, you will find the executable in the build folder (or under buil
 ## 👏 Credits & Licenses
 
 - **Graphics**: The sprites used in this game are created by Nicolás A. Ortega (Deathsbreed) and licensed under [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
-  - Source: [\[Link zum Ersteller\]](https://opengameart.org/content/pong-graphics)
+  - Source: [\[Asset\]](https://opengameart.org/content/pong-graphics)
