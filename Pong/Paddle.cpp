@@ -2,7 +2,7 @@
 
 Paddle::Paddle(sf::IntRect selectPaddle, sf::Vector2f setPosition)
 {
-	if (paddleTexture.loadFromFile("..\\sprites.png", selectPaddle));
+	if (paddleTexture.loadFromFile("./assets/sprites.png", selectPaddle));
 	{
 		paddleSprite.setTexture(paddleTexture);
 		paddleSprite.setOrigin(paddleSprite.getGlobalBounds().width / 2, paddleSprite.getGlobalBounds().height / 2);
@@ -45,6 +45,7 @@ void Paddle::Render(sf::RenderWindow& window)
 
 void Paddle::Update(sf::Time deltaTime)
 {
+	std::cout << "speed = " << speed * deltaTime.asSeconds() << std::endl;
 	paddleSprite.move(direction * speed * deltaTime.asSeconds());
 	IsCollidingWithWall();
 }

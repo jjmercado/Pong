@@ -2,7 +2,7 @@
 
 Score::Score()
 {
-	if (font.loadFromFile("..\\kenvector_future.ttf"))
+	if (font.loadFromFile("./assets/kenvector_future.ttf"))
 	{
 		textScoreLeft.setFont(font);
 		textScoreLeft.setCharacterSize(60);
