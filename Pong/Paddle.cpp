@@ -1,5 +1,12 @@
 #include "Paddle.hpp"
 
+/*
+ * Credits / Attribution:
+ * The paddle sprite used in this file is part of a sprite sheet created by Nicolás A. Ortega (Deathsbreed).
+ * Source: https://opengameart.org/content/pong-graphics
+ * License: CC-BY-SA 3.0 (https://creativecommons.org/licenses/by-sa/3.0/)
+ */
+
 Paddle::Paddle(sf::IntRect selectPaddle, sf::Vector2f setPosition)
 {
 	if (paddleTexture.loadFromFile("./assets/sprites.png", selectPaddle));

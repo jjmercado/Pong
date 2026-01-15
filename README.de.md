@@ -66,3 +66,8 @@ cmake --build .
 
 5. **Spiel starten:**
 Nach dem Build findest du die ausführbare Datei im build-Ordner (oder unter build/Debug / build/Release bei Windows).
+
+## 👏 Credits & Lizenzen
+
+- **Grafiken**: Die verwendeten Sprites wurden von [Name des Erstellers] erstellt und stehen unter der [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/deed.de) Lizenz.
+  - Quelle: [Link zum Ersteller/Asset]
