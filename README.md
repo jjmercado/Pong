@@ -1,61 +1,69 @@
 # Pong
 
-Dieses Projekt ist eine moderne Umsetzung des Arcade-Klassikers Pong. Entwickelt in C++ mit der SFML-Bibliothek, liegt der Fokus auf präziser Physik-Berechnung, einer herausfordernden KI und einer sauberen Software-Architektur.
+This project is my implementation of the arcade classic Pong, designed as a **local 2-player game**. Developed in C++ using the SFML library, it provides a solid foundation that is open to further expansion.
 
-🕹️ Das Spiel
+> Read this in [German](README.de.md).
 
-Pong simuliert ein Tischtennis-Duell. Der Ball prallt von Wänden und Paddles ab, wobei die Geschwindigkeit bei jedem Schlag zunimmt, um die Schwierigkeit stetig zu steigern.
+🕹️ The Game
 
-- Reflexionsphysik: Der Abprallwinkel wird dynamisch berechnet, je nachdem, wo der Ball das Paddle trifft.
+Pong simulates a table tennis duel. The ball bounces off walls and paddles.
 
-- Gegner-KI: Ein Computergegner verfolgt die Flugbahn des Balls in Echtzeit.
+- **Reflection Physics**: The rebound angle is calculated dynamically depending on where the ball hits the paddle.
+- **Scoring System**: A point is awarded when the ball crosses a player's back boundary.
+- **Game Loop**: Clean separation of input, game logic, and rendering for smooth gameplay.
 
-- Game-Loop: Saubere Trennung von Input, Spiellogik und Rendering für flüssiges Gameplay.
+> **Status Note**: Sound files are already present in the `assets/Sound/` folder but are not yet implemented in the code.
+
+### Controls
+
+The game is designed for two players sharing one keyboard:
+
+- **Left Player**: Keys `W` (up) and `S` (down)
+- **Right Player**: Arrow keys `Up` and `Down`
 
 ## 🚀 Download & Website
 
-Du möchtest das Spiel direkt ausprobieren, ohne es selbst zu kompilieren? Die ausführbare Datei (.exe / App) sowie weitere Informationen findest du auf meiner Website:
+Want to try the game immediately without compiling it yourself? You can find the executable (.exe / App) and more information on my website:
 
 [Website]: https://jjmercado.github.io/portfolioSite/games/pong
-🔗 Hier zur [Website] und zum Download
+🔗 Go to [Website] and Download
 
-## 🛠️ Build-Anleitung (Lokal bauen)
+## 🛠️ Build Instructions (Build Locally)
 
-Dieses Projekt verwendet CMake, um den Build-Prozess plattformübergreifend zu verwalten.
-Voraussetzungen
+This project uses CMake to manage the build process across platforms.
 
-- Ein C++17 fähiger Compiler (GCC, Clang oder MSVC).
+### Prerequisites
 
-- CMake (Version 3.10 oder höher).
+- A C++17 capable compiler (GCC, Clang, or MSVC).
+- CMake (Version 3.10 or higher).
+- SFML 2.6.2 (Update to the latest SFML version is planned when time permits).
 
-- SFML 2.6.2 (muss auf deinem System installiert sein).
+### Step-by-Step
 
-Schritt-für-Schritt
-
-1. Repository klonen:
-
+1. **Clone Repository**:
 ```bash
 git clone https://github.com/jjmercado/Pong.git
 cd Pong
 ```
 
-2. Build-Verzeichnis erstellen:
+2. **Create Build Directory:**
 
 ```bash
 mkdir build
 cd build
 ```
 
-3. CMake konfigurieren:
+3. **Configure CMake:**
 
 ```bash
 cmake ..
 ```
 
-4. CMake konfigurieren:
+4. **Compile**:
 
 ```bash
 cmake --build .
 ```
 
-5. Spiel starten: Nach dem Build findest du die ausführbare Datei im build-Ordner (oder unter build/Debug / build/Release bei Windows).
+5. **Start Game:**
+After the build, you will find the executable in the build folder (or under build/Debug / build/Release on Windows).
