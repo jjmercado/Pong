@@ -1,6 +1,6 @@
 #pragma once
 #include <SFML/Graphics.hpp>
-#include "ScorePoint.h"
+#include "ScorePoint.hpp"
 #include "Puck.hpp"
 
 class Score

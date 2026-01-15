@@ -1,4 +1,4 @@
-#include "ScorePoint.h"
+#include "ScorePoint.hpp"
 
 ScorePoint::ScorePoint()
 {

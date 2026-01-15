@@ -2,7 +2,7 @@
 
 Puck::Puck()
 {
-	if (puckTexture.loadFromFile("./assets/sprites.png", sf::IntRect(100, 0, 50, 50)));
+	if (puckTexture.loadFromFile("./assets/sprites.png", sf::IntRect(100, 0, 50, 50)))
 	{
 		puckSprite.setTexture(puckTexture);
 		puckSprite.setOrigin(puckSprite.getGlobalBounds().width / 2, puckSprite.getGlobalBounds().height / 2);
