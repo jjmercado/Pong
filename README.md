@@ -12,8 +12,6 @@ Pong simulates a table tennis duel. The ball bounces off walls and paddles.
 - **Scoring System**: A point is awarded when the ball crosses a player's back boundary.
 - **Game Loop**: Clean separation of input, game logic, and rendering for smooth gameplay.
 
-> **Status Note**: Sound files are already present in the `assets/Sound/` folder but are not yet implemented in the code.
-
 ### Controls
 
 The game is designed for two players sharing one keyboard:

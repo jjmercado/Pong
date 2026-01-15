@@ -10,8 +10,6 @@ Pong simuliert ein Tischtennis-Duell. Der Ball prallt von Wänden und Paddles ab
 - **Punktesystem**: Ein Punkt wird vergeben, wenn der Ball die hintere Spielfeldbegrenzung eines Spielers überschreitet.
 - **Game-Loop**: Saubere Trennung von Input, Spiellogik und Rendering für flüssiges Gameplay.
 
-> **Status-Hinweis**: Sound-Dateien befinden sich bereits im Ordner `assets/Sound/`, sind im Code aber aktuell noch nicht implementiert.
-
 ### Steuerung
 
 Das Spiel ist für zwei Spieler an einer Tastatur konzipiert:
