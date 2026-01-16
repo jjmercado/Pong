@@ -76,4 +76,4 @@ After the build, you will find the executable in the build folder (or under buil
 The code for this website is licensed under the [MIT] License.
 
 - **Code:** The source code of this website is under the MIT License. You are welcome to study it and use it for your own projects.
-- **Assets & Content:** All images, videos, and texts on this website are my intellectual property (Copyright) and are not covered by the MIT License. Use of these assets is not permitted without express permission.
+- **Assets & Content:** All images, videos, and texts are my intellectual property (Copyright) and are not covered by the MIT License. Use of these assets is not permitted without express permission.

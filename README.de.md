@@ -76,4 +76,4 @@ Der Code dieser Website steht unter der [MIT] Lizenz.
 
 - **Code:** Der Quellcode dieser Website steht unter der MIT-Lizenz. Du darfst ihn gerne studieren und für eigene Projekte verwenden.
 
-- **Assets & Inhalt:** Alle Bilder, Videos und Texte auf dieser Website sind mein geistiges Eigentum (Copyright) und stehen nicht unter der MIT-Lizenz. Eine Verwendung dieser Assets ist ohne ausdrückliche Genehmigung nicht gestattet.
+- **Assets & Inhalt:** Alle Bilder, Videos und Texte sind mein geistiges Eigentum (Copyright) und stehen nicht unter der MIT-Lizenz. Eine Verwendung dieser Assets ist ohne ausdrückliche Genehmigung nicht gestattet.
