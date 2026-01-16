@@ -66,7 +66,15 @@ cmake --build .
 5. **Start Game:**
 After the build, you will find the executable in the build folder (or under build/Debug / build/Release on Windows).
 
-## 👏 Credits & Licenses
+## 👏 Credits
 
 - **Graphics**: The sprites used in this game are created by Nicolás A. Ortega (Deathsbreed) and licensed under [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/).
   - Source: [\[Asset\]](https://opengameart.org/content/pong-graphics)
+
+## 📜 License & Copyright
+
+The code for this website is licensed under the [MIT] License.
+
+- **Code:** The source code of this website is under the MIT License. You are welcome to study it and use it for your own projects.
+- **Assets & Content:** All images, videos, and texts on this website are my intellectual property (Copyright) and are not covered by the MIT License. Use of these assets is not permitted without express permission.
+- **Disclaimer:** This is a private portfolio. I assume no liability for any damage caused by downloading or using the projects linked here. Official and secure downloads are only available via my official website [https://jjmercado.github.io/portfolioSite/] or this GitHub repository. Any copies on other domains are unauthorized.
