@@ -17,12 +17,12 @@ link_directories("${SFML_PATH}/lib")
 
 file(GLOB SOURCES "Pong/*.cpp")
 
-add_executable(Pong.x ${SOURCES})
+add_executable(Pong ${SOURCES})
 
 if(WIN32)
     # Windows Static Linking
     # Reihenfolge ist wichtig: Erst Graphics, dann Window, dann System
-    target_link_libraries(Pong.x
+    target_link_libraries(Pong
         sfml-graphics-s 
         sfml-window-s 
         sfml-system-s
@@ -36,7 +36,7 @@ elseif(UNIX)
     # Linux Static Linking
     # Hier müssen alle Abhängigkeiten von SFML manuell gelistet werden,
     # da wir keine Shared Libs nutzen, die das automatisch machen.
-    target_link_libraries(Pong.x
+    target_link_libraries(Pong
         sfml-graphics-s
         sfml-window-s
         sfml-system-s
