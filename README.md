@@ -32,9 +32,9 @@ This project uses CMake to manage the build process across platforms.
 
 ### Prerequisites
 
-- A C++17 capable compiler (GCC, Clang, or MSVC).
-- CMake (Version 3.10 or higher).
-- SFML 2.6.2 (Update to the latest SFML version is planned when time permits).
+- A **C++17** capable compiler (GCC, Clang, or MSVC).
+- **CMake** (Version 3.10 or higher).
+- **SFML 2.6.2** Download binaries for Linux(not via Package Manager) or Windows(An update to the latest SFML version will follow when time permits).
 
 ### Step-by-Step
 
@@ -57,11 +57,17 @@ cd build
 cmake ..
 ```
 
-4. **Compile**:
+4. **Build the Project:**
 
-```bash
-cmake --build .
-```
+    1. **Linux**
+    ```bash
+    cmake --build .
+    ```
+
+    2. **Windows**
+    ```bash
+    cmake --build . --config Release
+    ```
 
 5. **Start Game:**
 After the build, you will find the executable in the build folder (or under build/Debug / build/Release on Windows).
